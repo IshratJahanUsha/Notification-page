@@ -4,6 +4,7 @@ let unseenNotification = document.querySelector(".unseen-notification");
 let unreadMark = document.querySelectorAll(".unread-mark");
 let markAllBtn = document.querySelector(".mark-all-btn");
 
+let unseenAll = document.querySelectorAll(".notification");
 
 unseenNotification.innerText = unseen.length
 
@@ -33,12 +34,22 @@ unseen.forEach((notification) => {
 
 })
 
-unreadMark.forEach((unread) => {
+unseenAll.forEach((unseen) => {
 
-    unread.addEventListener("click", (e) => {
+    unseen.addEventListener("click", (e) => {
+
         let unreadMark = document.querySelectorAll(".unread-mark");
-        unreadMark.style.display = none;
-    })
+        unreadMark.forEach((unread) => {
+            unread.style.display = 'none';
+        })   
+        
 
+
+        // unseen.style.display = 'none';
+    })
+   
 
 })
+
+
+
