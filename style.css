@@ -78,9 +78,23 @@ main {
     /* background-color: rgb(172, 241, 241); */
 }
 
+/* .seen,
+.notification.active .notification-detail{
+    /* background-color: var(--White); */
+    /* background-color: aquamarine; */
+/* } */ 
+.notification.active .notification-detail .unread-mark{
+    display: none;
+}
+
 .seen,
-.all-unseen .unseen.active {
-    background-color: var(--White);
+.notification.active .unseen-act{
+    /* background-color: var(--White); */
+    background-color: rgb(228, 250, 242);
+    border-radius: .5rem;
+    padding: 1rem;
+    
+
 }
 
 .notification img {
@@ -102,9 +116,10 @@ main {
     margin-left: 0.25rem;
 }
 
-.notification-detail .unread-mark {
-    /* display: none; */
+.notification.active .notification-detail .unread-mark{
+    display: none;
 }
+
 
 .name {
     font-weight: 800;
