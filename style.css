@@ -79,7 +79,7 @@ main {
 }
 
 .seen,
-.unseen.active {
+.all-unseen .unseen.active {
     background-color: var(--White);
 }
 
@@ -102,6 +102,10 @@ main {
     margin-left: 0.25rem;
 }
 
+.notification-detail .unread-mark {
+    /* display: none; */
+}
+
 .name {
     font-weight: 800;
     color: var(--Very-dark-blue);
@@ -116,10 +120,6 @@ main {
 .name:hover,
 .text:hover {
     color: var(--Blue);
-}
-
-.unread-mark {
-    display: none;
 }
 
 .chess-club {
@@ -138,16 +138,12 @@ main {
     background-color: rgb(222, 232, 247);
 }
 
-/* main{
-    position: relative;
-} */
 .seen .chees-img {
     width: 2.5rem;
     height: 2.5rem;
     margin-left: 1rem;
-    position: absolute;
-   right: 1rem;
 }
+
 
 /*  */
 
@@ -157,5 +153,11 @@ main {
         margin: 2rem auto;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         border-radius: 0.33rem;
+        position: relative;
+    }
+
+    .seen .chees-img {
+        position: absolute;
+        right: 3rem;
     }
 }

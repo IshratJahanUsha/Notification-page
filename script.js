@@ -1,37 +1,44 @@
 
 let unseen = document.querySelectorAll(".unseen");
-let unseennotification = document.querySelector(".unseen-notification");
+let unseenNotification = document.querySelector(".unseen-notification");
 let unreadMark = document.querySelectorAll(".unread-mark");
 let markAllBtn = document.querySelector(".mark-all-btn");
 
-unseennotification.innerText = unseen.length
 
-markAllBtn.addEventListener("click",()=>{
+unseenNotification.innerText = unseen.length
 
-    unseen.forEach((notification)=>{
+markAllBtn.addEventListener("click", () => {
 
-            notification.classList.add('active');
-            notification.classList.remove('unseen');
-            let unseen = document.querySelectorAll(".unseen");
-            unseennotification.innerText = unseen.length
+    unseen.forEach((notification) => {
 
-        })  
-
-})
-
-
-unseen.forEach((notification)=>{
-
-    notification.addEventListener("click",(e)=>{
         notification.classList.add('active');
         notification.classList.remove('unseen');
         let unseen = document.querySelectorAll(".unseen");
-        unseennotification.innerText = unseen.length
+        unseenNotification.innerText = unseen.length
+
     })
 
-    
 })
 
 
-// let unreadMark = document.querySelectorAll(".unread-mark");
-//         unreadMark.style.opacity = 0 ;
+unseen.forEach((notification) => {
+
+    notification.addEventListener("click", (e) => {
+        notification.classList.add('active');
+        notification.classList.remove('unseen');
+        let unseen = document.querySelectorAll(".unseen");
+        unseenNotification.innerText = unseen.length
+    })
+
+
+})
+
+unreadMark.forEach((unread) => {
+
+    unread.addEventListener("click", (e) => {
+        let unreadMark = document.querySelectorAll(".unread-mark");
+        unreadMark.style.display = none;
+    })
+
+
+})
