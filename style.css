@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
 
-:root{
+:root {
     --Red: hsl(1, 90%, 64%);
     --Blue: hsl(219, 85%, 26%);
     --White: hsl(0, 0%, 100%);
@@ -12,7 +12,7 @@
     --Very-dark-blue: hsl(224, 21%, 14%);
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     outline: none;
@@ -22,27 +22,27 @@
 }
 
 
-main{
+main {
     max-width: 760px;
     /* max-width: 60%; */
-    margin:auto;
+    margin: auto;
 }
 
-.header{
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color:rgb(250, 241, 241);
+    background-color: rgb(250, 241, 241);
     width: 100%;
     padding: 1.5rem 1rem;
 }
 
-.header h2{
+.header h2 {
     color: var(--Very-dark-blue);
 }
 
-.header .unseen-notification{
-    color:var(--White);
+.header .unseen-notification {
+    color: var(--White);
     background-color: var(--Blue);
     padding: .2rem .8rem;
     border-radius: .5rem;
@@ -50,23 +50,23 @@ main{
     font-weight: 700;
 }
 
-.header .mark-all-btn{
+.header .mark-all-btn {
     all: unset;
     color: var(--Dark-grayish-blue);
     font-weight: 500;
     cursor: pointer;
 }
 
-.header .mark-all-btn:hover{
+.header .mark-all-btn:hover {
     color: var(--Blue);
 }
 
-.all-notification{
+.all-notification {
     padding: 0 1.5rem;
 
 }
 
-.notification{
+.notification {
     background-color: var(--Very-light-grayish-blue);
     border-radius: 0.5rem;
     display: flex;
@@ -79,17 +79,17 @@ main{
 }
 
 .seen,
-.unseen.active{
+.unseen.active {
     background-color: var(--White);
 }
 
-.notification img{
+.notification img {
     width: 2.5rem;
     margin-right: 0.8rem;
 }
- 
+
 .notification-detail p,
-.notification-detail .time{
+.notification-detail .time {
     color: var(--Dark-grayish-blue);
     font-size: 0.9rem;
 }
@@ -102,57 +102,59 @@ main{
     margin-left: 0.25rem;
 }
 
-.name{
+.name {
     font-weight: 800;
     color: var(--Very-dark-blue);
     margin-right: 0.2rem;
 }
 
-.text{
+.text {
     font-weight: 800;
     font-size: 0.9rem;
 }
 
-.name:hover, .text:hover{
+.name:hover,
+.text:hover {
     color: var(--Blue);
 }
 
-.unread-mark{
+.unread-mark {
     display: none;
 }
 
-.chess-club{
+.chess-club {
     color: var(--Blue);
     font-weight: 800;
 }
 
-.private-message{
+.private-message {
     border: 1px solid var(--Light--grayish-blue-2);
     margin-top: .5rem;
     padding: 1rem;
     border-radius: 0.33rem;
 }
 
-.private-message:hover{
+.private-message:hover {
     background-color: rgb(222, 232, 247);
 }
 
-.seen{
+/* main{
     position: relative;
-}
-.seen .chees-img{
+} */
+.seen .chees-img {
     width: 2.5rem;
     height: 2.5rem;
-   position: absolute;
-   right: 2rem;
+    margin-left: 1rem;
+    position: absolute;
+   right: 1rem;
 }
 
 /*  */
 
-@media (min-width:768px){
-    main{
+@media (min-width:768px) {
+    main {
         max-width: 650px;
-        margin:2rem auto;
+        margin: 2rem auto;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         border-radius: 0.33rem;
     }

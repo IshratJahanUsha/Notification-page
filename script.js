@@ -15,9 +15,7 @@ markAllBtn.addEventListener("click",()=>{
             let unseen = document.querySelectorAll(".unseen");
             unseennotification.innerText = unseen.length
 
-        })
-        let unreadMark = document.querySelectorAll(".unread-mark");
-        unreadMark.style.display = none ;  
+        })  
 
 })
 
@@ -31,6 +29,9 @@ unseen.forEach((notification)=>{
         unseennotification.innerText = unseen.length
     })
 
+    
 })
 
 
+// let unreadMark = document.querySelectorAll(".unread-mark");
+//         unreadMark.style.opacity = 0 ;
