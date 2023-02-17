@@ -81,19 +81,14 @@ main {
 /* .seen,
 .notification.active .notification-detail{
     /* background-color: var(--White); */
-    /* background-color: aquamarine; */
 /* } */ 
-.notification.active .notification-detail .unread-mark{
-    display: none;
-}
 
 .seen,
 .notification.active .unseen-act{
-    /* background-color: var(--White); */
-    background-color: rgb(228, 250, 242);
+    background-color: var(--White);
+    /* background-color: rgb(228, 250, 242); */
     border-radius: .5rem;
-    padding: 1rem;
-    
+    padding: 1rem 
 
 }
 
