@@ -78,13 +78,8 @@ main {
     /* background-color: rgb(172, 241, 241); */
 }
 
-/* .seen,
-.notification.active .notification-detail{
-    /* background-color: var(--White); */
-/* } */ 
-
 .seen,
-.notification.active .unseen-act{
+.notification.active{
     background-color: var(--White);
     /* background-color: rgb(228, 250, 242); */
     border-radius: .5rem;
@@ -92,9 +87,6 @@ main {
 
 }
 
-.unseen-act{
-    width: 100%;
-}
 
 .notification img {
     width: 2.5rem;
