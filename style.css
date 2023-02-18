@@ -85,11 +85,15 @@ main {
 
 .seen,
 .notification.active .unseen-act{
-    background-color: var(--White);
-    /* background-color: rgb(228, 250, 242); */
+    /* background-color: var(--White); */
+    background-color: rgb(228, 250, 242);
     border-radius: .5rem;
-    padding: 1rem 
+    padding: 1rem ;
 
+}
+
+.unseen-act{
+    width: 100%;
 }
 
 .notification img {
